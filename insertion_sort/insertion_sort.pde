@@ -1,14 +1,15 @@
-// Selection Sort Animation
+// Insertion Sort Animation
 
 ArrayList<Column> cols;
 int numCols;
 int col_width;
 int count;
+
+
 void settings(){
   numCols=50;
   size(closestNumber(900,numCols),closestNumber(800,numCols));
   col_width= width / numCols;
-
 }
 
 
@@ -33,7 +34,7 @@ void draw() {
    
   if(count < numCols){
     int current = count;
-   // cols.get(count).setColor(color(255,0,0));
+    // cols.get(count).setColor(color(255,0,0));
 
     while (current > 0 && cols.get(current).getHeight() < cols.get(current - 1).getHeight()) {
       //swap coordinate positions
@@ -50,8 +51,6 @@ void draw() {
       current--;
     
     }
-
-
     count+=1;
   }
 }

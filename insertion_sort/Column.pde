@@ -15,7 +15,7 @@ class Column
     w=iw;
     h=ih;
     label=""+h;
-    showLabel=true;
+    showLabel=false;
   }
 
   Column(int ixp, int iyp, int iw, int ih, color c) {
@@ -25,7 +25,7 @@ class Column
     h=ih;
     this.c=c;
     label=""+h;
-    showLabel=true;
+    showLabel=false;
   }
  
  
