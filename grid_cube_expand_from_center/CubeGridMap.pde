@@ -11,11 +11,11 @@ class CubeGridMap
   int cubeSize;
   ArrayList<ArrayList<ArrayList<Cube>>> map = new ArrayList<ArrayList<ArrayList<Cube>>>();
 
-  CubeGridMap(int xpos, int ypos, int x, int y, int z, int size) {
+  CubeGridMap(int xpos, int ypos, int x, int y, int z, int size, int padding) {
     this.xpos=xpos;
     this.ypos=ypos;
     this.zpos=0;
-    this.padding=40;
+    this.padding=padding;
     numRows = x;
     numCols=y;
     numDepth=z;
